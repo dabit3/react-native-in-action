@@ -39,23 +39,28 @@ class App extends Component {
 	}
 
   render() {
-
-  	let Todos = this.state.todos.map((t, i) => {
-			return <View key={ i }>
-							 <Text>{ t.title }</Text>
-						 </View>
-		})
-
     return (
       <View style={ styles.container }>
 	      <Header />
 	      <Input inputValue={ this.state.inputValue } _inputChange={ (text) => this._inputChange(text) } />
-	      <Button _submitTodo={ () => this._submitTodo() } />
-	      { Todos }
+        <Todos todos={ this.state.todos } />
+        <Button _submitTodo={ () => this._submitTodo() } />
       </View>
     );
   }
 }
+
+let Todos = ({ todos }) => (
+  <View>
+    {
+      todos.map((t, i) => {
+        return <View style={ styles.todoContainer } key={ i }>
+                 <Text style={ styles.todoText }>{ t.title }</Text>
+               </View>
+      })
+    }
+  </View>
+)
 
 let Header = () => (
 	<View style={ styles.header }>
@@ -67,10 +72,10 @@ let Input = ({ _inputChange, inputValue }) => (
 	<View style={ styles.inputContainer }>
 		<TextInput
 			value={ inputValue }
-			style={ styles.input } 
-			placeholder='What needs to be done?' 
-			placeholderTextColor='CACACA' 
-			selectionColor='666666' 
+			style={ styles.input }
+			placeholder='What needs to be done?'
+			placeholderTextColor='CACACA'
+			selectionColor='666666'
 			onChangeText={ _inputChange } />
 	</View>
 )
@@ -131,5 +136,20 @@ let styles = StyleSheet.create({
 	},
 	submit: {
 		color: '666666'
-	}
+	},
+  todoContainer: {
+		marginLeft:20,
+		marginRight:20,
+  	backgroundColor: 'ffffff',
+    borderTopWidth: 1,
+    borderRightWidth:1,
+    borderLeftWidth:1,
+    borderColor: 'ededed',
+    paddingLeft:14,
+    paddingTop:14,
+    paddingBottom:14
+	},
+  todoText: {
+    fontSize:17
+  }
 })
