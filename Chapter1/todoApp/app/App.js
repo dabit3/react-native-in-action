@@ -16,10 +16,10 @@ import React, {
 
 let todoIndex = 0
 
-import Header from './Header'
+import Heading from './Heading'
 import Input from './Input'
 import Button from './Button'
-import Todos from './Todos'
+import TodoList from './TodoList'
 import TabBar from './TabBar'
 
 class App extends Component {
@@ -74,12 +74,12 @@ class App extends Component {
     return (
       <View style={ styles.container }>
 	      <ScrollView style={styles.content}>
-	      	<Header />
+	      	<Heading />
 	        <Input inputValue={ inputValue } _inputChange={ (text) => this._inputChange(text) } />
-          <Todos type={type} _toggleComplete={this._toggleComplete.bind(this)} _deleteTodo={this._deleteTodo.bind(this)} todos={ todos } />
+          <TodoList type={type} _toggleComplete={this._toggleComplete.bind(this)} _deleteTodo={this._deleteTodo.bind(this)} todos={ todos } />
           <Button _submitTodo={ () => this._submitTodo() } />
 	      </ScrollView>
-	      <TabBar _setType={this._setType.bind(this)} />
+	      <TabBar type={type} _setType={this._setType.bind(this)} />
       </View>
     );
   }

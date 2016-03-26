@@ -1,11 +1,11 @@
 import React, { View, StyleSheet } from 'react-native'
 import TabBarItem from './TabBarItem'
 
-let TabBar = ({ _setType }) => (
+let TabBar = ({ _setType, type }) => (
 	<View style={styles.container}>
-    <TabBarItem title='All' _setType={() => _setType('All')} />
-    <TabBarItem border title='Active' _setType={() => _setType('Active')} />
-    <TabBarItem border title='Complete' _setType={() => _setType('Complete')} />
+    <TabBarItem type={type} title='All' _setType={() => _setType('All')} />
+    <TabBarItem type={type}border title='Active' _setType={() => _setType('Active')} />
+    <TabBarItem type={type} border title='Complete' _setType={() => _setType('Complete')} />
 	</View>
 )
 

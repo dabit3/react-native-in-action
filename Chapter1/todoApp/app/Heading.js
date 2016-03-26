@@ -1,6 +1,6 @@
 import React, { View, Text, StyleSheet } from 'react-native'
 
-let Header = () => (
+let Heading = () => (
 	<View style={ styles.header }>
 		<Text style={ styles.headerText }>todos</Text>
 	</View>
@@ -18,4 +18,4 @@ let styles = StyleSheet.create({
 	}
 })
 
-export default Header
+export default Heading
