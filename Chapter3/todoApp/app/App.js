@@ -56,7 +56,6 @@ class App extends Component {
 
   render () {
     let { todos, inputValue, type } = this.state
-
     return (
       <View style={styles.container}>
         <ScrollView style={styles.content}>
@@ -79,7 +78,7 @@ export default App
 
 let styles = StyleSheet.create({
   container: {
-    backgroundColor: 'f5f5f5',
+    backgroundColor: '#f5f5f5',
     flex: 1
   },
   content: {

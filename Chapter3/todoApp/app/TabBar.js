@@ -22,7 +22,7 @@ let styles = StyleSheet.create({
     height: 70,
     flexDirection: 'row',
     borderTopWidth: 1,
-    borderTopColor: 'dddddd'
+    borderTopColor: '#dddddd'
   }
 })
 

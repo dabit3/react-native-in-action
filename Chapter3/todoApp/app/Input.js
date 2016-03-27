@@ -6,8 +6,8 @@ let Input = ({ _inputChange, inputValue }) => (
       value={inputValue}
       style={styles.input}
       placeholder='What needs to be done?'
-      placeholderTextColor='CACACA'
-      selectionColor='666666'
+      placeholderTextColor='#CACACA'
+      selectionColor='#666666'
       onChangeText={_inputChange} />
   </View>
 )
@@ -18,12 +18,12 @@ let styles = StyleSheet.create({
     marginRight: 20,
     shadowOpacity: 0.2,
     shadowRadius: 3,
-    shadowColor: '000000',
+    shadowColor: '#000000',
     shadowOffset: { width: 2, height: 2 }
   },
   input: {
     height: 60,
-    backgroundColor: 'ffffff',
+    backgroundColor: '#ffffff',
     paddingLeft: 10,
     paddingRight: 10
   }
