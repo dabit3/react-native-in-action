@@ -1,6 +1,6 @@
 import React, { View, TextInput, StyleSheet } from 'react-native'
 
-let Input = ({ _inputChange, inputValue }) => (
+const Input = ({ _inputChange, inputValue }) => (
   <View style={styles.inputContainer}>
     <TextInput
       value={inputValue}
@@ -12,7 +12,7 @@ let Input = ({ _inputChange, inputValue }) => (
   </View>
 )
 
-let styles = StyleSheet.create({
+const styles = StyleSheet.create({
   inputContainer: {
     marginLeft: 20,
     marginRight: 20,

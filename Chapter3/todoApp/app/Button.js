@@ -1,6 +1,6 @@
 import React, { View, Text, StyleSheet, TouchableHighlight } from 'react-native'
 
-let Button = ({ _submitTodo }) => (
+const Button = ({ _submitTodo }) => (
   <View style={styles.buttonContainer}>
     <TouchableHighlight underlayColor='#efefef' style={styles.button} onPress={_submitTodo}>
       <Text style={styles.submit}>
@@ -10,7 +10,7 @@ let Button = ({ _submitTodo }) => (
   </View>
 )
 
-let styles = StyleSheet.create({
+const styles = StyleSheet.create({
   buttonContainer: {
     alignItems: 'flex-end'
   },

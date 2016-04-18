@@ -1,8 +1,7 @@
 import React, { View, Text, StyleSheet } from 'react-native'
-
 import TodoButton from './TodoButton'
 
-let Todo = ({ todo, i, _toggleComplete, _deleteTodo }) => (
+const Todo = ({ todo, _toggleComplete, _deleteTodo }) => (
   <View style={styles.todoContainer}>
     <Text style={styles.todoText}>
       {todo.title}
@@ -14,7 +13,7 @@ let Todo = ({ todo, i, _toggleComplete, _deleteTodo }) => (
   </View>
 )
 
-let styles = StyleSheet.create({
+const styles = StyleSheet.create({
   todoContainer: {
     marginLeft: 20,
     marginRight: 20,

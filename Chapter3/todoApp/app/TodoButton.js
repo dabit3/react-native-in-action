@@ -1,6 +1,6 @@
 import React, { Text, TouchableHighlight, StyleSheet } from 'react-native'
 
-let TodoButtton = ({ onPress, complete, name }) => (
+const TodoButtton = ({ onPress, complete, name }) => (
   <TouchableHighlight onPress={onPress} underlayColor='#efefef' style={styles.button}>
     <Text style={[ styles.text, complete ? styles.complete : null, name === 'Delete' ? styles.deleteButton : null ]}>
       {name}
@@ -8,11 +8,7 @@ let TodoButtton = ({ onPress, complete, name }) => (
   </TouchableHighlight>
 )
 
-TodoButtton.defaultProps = {
-
-}
-
-let styles = StyleSheet.create({
+const styles = StyleSheet.create({
   button: {
     alignSelf: 'flex-end',
     padding: 7,

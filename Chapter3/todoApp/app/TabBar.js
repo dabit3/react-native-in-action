@@ -1,9 +1,12 @@
 import React, { View, StyleSheet } from 'react-native'
 import TabBarItem from './TabBarItem'
 
-let TabBar = ({ _setType, type }) => (
+const TabBar = ({ _setType, type }) => (
   <View style={styles.container}>
-    <TabBarItem type={type} title='All' _setType={() => _setType('All')} />
+    <TabBarItem
+      type={type}
+      title='All'
+      _setType={() => _setType('All')} />
     <TabBarItem
       type={type}
       border
@@ -17,7 +20,7 @@ let TabBar = ({ _setType, type }) => (
   </View>
 )
 
-let styles = StyleSheet.create({
+const styles = StyleSheet.create({
   container: {
     height: 70,
     flexDirection: 'row',

@@ -1,6 +1,6 @@
 import React, { View, Text, StyleSheet } from 'react-native'
 
-let Heading = () => (
+const Heading = () => (
   <View style={styles.header}>
     <Text style={styles.headerText}>
       todos
@@ -8,7 +8,7 @@ let Heading = () => (
   </View>
 )
 
-let styles = StyleSheet.create({
+const styles = StyleSheet.create({
   header: {
     marginTop: 80
   },
