@@ -1,4 +1,5 @@
-import React, { View, Text, StyleSheet } from 'react-native'
+import React from 'react'
+import { View, Text, StyleSheet } from 'react-native'
 
 const Heading = () => (
   <View style={styles.header}>

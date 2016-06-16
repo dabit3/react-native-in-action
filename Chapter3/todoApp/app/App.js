@@ -1,5 +1,5 @@
-'use strict'
-import React, {View, ScrollView, Component, StyleSheet} from 'react-native'
+import React, { Component } from 'react'
+import { View, ScrollView, StyleSheet } from 'react-native'
 
 let todoIndex = 0
 

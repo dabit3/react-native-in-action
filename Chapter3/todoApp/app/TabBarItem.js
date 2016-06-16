@@ -1,4 +1,5 @@
-import React, { Text, TouchableHighlight, StyleSheet } from 'react-native'
+import React from 'react'
+import { Text, TouchableHighlight, StyleSheet } from 'react-native'
 
 const TabBarItem = ({ border, title, selected, _setType, type }) => (
   <TouchableHighlight

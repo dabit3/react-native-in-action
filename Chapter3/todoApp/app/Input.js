@@ -1,4 +1,5 @@
-import React, { View, TextInput, StyleSheet } from 'react-native'
+import React from 'react'
+import { View, TextInput, StyleSheet } from 'react-native'
 
 const Input = ({ _inputChange, inputValue }) => (
   <View style={styles.inputContainer}>

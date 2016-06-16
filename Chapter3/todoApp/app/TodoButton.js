@@ -1,4 +1,5 @@
-import React, { Text, TouchableHighlight, StyleSheet } from 'react-native'
+import React from 'react'
+import { Text, TouchableHighlight, StyleSheet } from 'react-native'
 
 const TodoButtton = ({ onPress, complete, name }) => (
   <TouchableHighlight onPress={onPress} underlayColor='#efefef' style={styles.button}>

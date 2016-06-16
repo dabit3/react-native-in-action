@@ -1,8 +1,5 @@
-'use strict'
-import React, {
-  AppRegistry,
-  Component
-} from 'react-native'
+import React, { Component } from 'react'
+import { AppRegistry } from 'react-native'
 
 import App from './app/App'
 

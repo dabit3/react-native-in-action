@@ -1,4 +1,5 @@
-import React, { View, StyleSheet } from 'react-native'
+import React from 'react'
+import { View, StyleSheet } from 'react-native'
 import TabBarItem from './TabBarItem'
 
 const TabBar = ({ _setType, type }) => (
