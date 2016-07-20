@@ -1,5 +1,5 @@
 export default {
-  getName: function () {
+  getName () {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
         resolve('nader dabit')
