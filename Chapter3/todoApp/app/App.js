@@ -25,7 +25,7 @@ class App extends Component {
   }
 
   submitTodo () {
-    if (this.state.inputValue === '') return
+    if (this.state.inputValue.match(/^\s*$/)) return
     let todo = { title: this.state.inputValue, todoIndex: todoIndex, complete: false }
     todoIndex++
     this.state.todos.push(todo)
