@@ -2,14 +2,14 @@ import React from 'react'
 import { View, Text, StyleSheet } from 'react-native'
 import TodoButton from './TodoButton'
 
-const Todo = ({ todo, _toggleComplete, _deleteTodo }) => (
+const Todo = ({ todo, toggleComplete, deleteTodo }) => (
   <View style={styles.todoContainer}>
     <Text style={styles.todoText}>
       {todo.title}
     </Text>
     <View style={styles.buttons}>
-      <TodoButton name='Done' complete={todo.complete} onPress={_toggleComplete.bind(this, todo.todoIndex)} />
-      <TodoButton name='Delete' onPress={_deleteTodo.bind(this, todo.todoIndex)} />
+      <TodoButton name='Done' complete={todo.complete} onPress={toggleComplete.bind(this, todo.todoIndex)} />
+      <TodoButton name='Delete' onPress={deleteTodo.bind(this, todo.todoIndex)} />
     </View>
   </View>
 )

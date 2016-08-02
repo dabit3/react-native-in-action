@@ -2,7 +2,7 @@ import React from 'react'
 import { View } from 'react-native'
 import Todo from './Todo'
 
-const TodoList = ({ type, todos, _deleteTodo, _toggleComplete }) => {
+const TodoList = ({ type, todos, deleteTodo, toggleComplete }) => {
   const getVisibleTodos = (todos, type) => {
     switch (type) {
       case 'All':
@@ -20,8 +20,8 @@ const TodoList = ({ type, todos, _deleteTodo, _toggleComplete }) => {
     return (
       <Todo
         key={i}
-        _deleteTodo={_deleteTodo}
-        _toggleComplete={_toggleComplete}
+        deleteTodo={deleteTodo}
+        toggleComplete={toggleComplete}
         todo={todo} />
     )
   })

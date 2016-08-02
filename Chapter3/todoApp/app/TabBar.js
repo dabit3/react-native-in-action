@@ -2,22 +2,22 @@ import React from 'react'
 import { View, StyleSheet } from 'react-native'
 import TabBarItem from './TabBarItem'
 
-const TabBar = ({ _setType, type }) => (
+const TabBar = ({ setType, type }) => (
   <View style={styles.container}>
     <TabBarItem
       type={type}
       title='All'
-      _setType={() => _setType('All')} />
+      setType={() => setType('All')} />
     <TabBarItem
       type={type}
       border
       title='Active'
-      _setType={() => _setType('Active')} />
+      setType={() => setType('Active')} />
     <TabBarItem
       type={type}
       border
       title='Complete'
-      _setType={() => _setType('Complete')} />
+      setType={() => setType('Complete')} />
   </View>
 )
 

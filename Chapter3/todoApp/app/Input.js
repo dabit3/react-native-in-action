@@ -1,7 +1,7 @@
 import React from 'react'
 import { View, TextInput, StyleSheet } from 'react-native'
 
-const Input = ({ _inputChange, inputValue }) => (
+const Input = ({ inputChange, inputValue }) => (
   <View style={styles.inputContainer}>
     <TextInput
       value={inputValue}
@@ -9,7 +9,7 @@ const Input = ({ _inputChange, inputValue }) => (
       placeholder='What needs to be done?'
       placeholderTextColor='#CACACA'
       selectionColor='#666666'
-      onChangeText={_inputChange} />
+      onChangeText={inputChange} />
   </View>
 )
 

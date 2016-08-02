@@ -20,11 +20,11 @@ class App extends Component {
     }
   }
 
-  _inputChange (inputValue) {
+  inputChange (inputValue) {
     this.setState({ inputValue })
   }
 
-  _submitTodo () {
+  submitTodo () {
     if (this.state.inputValue === '') return
     let todo = { title: this.state.inputValue, todoIndex: todoIndex, complete: false }
     todoIndex++
@@ -32,7 +32,7 @@ class App extends Component {
     this.setState({ todos: this.state.todos, inputValue: '' })
   }
 
-  _deleteTodo (todoIndex) {
+  deleteTodo (todoIndex) {
     let { todos } = this.state
     todos = this.state.todos.filter((todo) => {
       return todo.todoIndex !== todoIndex
@@ -40,7 +40,7 @@ class App extends Component {
     this.setState({ todos })
   }
 
-  _toggleComplete (todoIndex) {
+  toggleComplete (todoIndex) {
     let { todos } = this.state
     todos.forEach((todo) => {
       if (todo.todoIndex === todoIndex) {
@@ -50,7 +50,7 @@ class App extends Component {
     this.setState({ todos })
   }
 
-  _setType (type) {
+  setType (type) {
     this.setState({ type })
   }
 
@@ -60,15 +60,15 @@ class App extends Component {
       <View style={styles.container}>
         <ScrollView style={styles.content}>
           <Heading />
-          <Input inputValue={inputValue} _inputChange={(text) => this._inputChange(text)} />
+          <Input inputValue={inputValue} inputChange={(text) => this.inputChange(text)} />
           <TodoList
             type={type}
-            _toggleComplete={this._toggleComplete.bind(this)}
-            _deleteTodo={this._deleteTodo.bind(this)}
+            toggleComplete={this.toggleComplete.bind(this)}
+            deleteTodo={this.deleteTodo.bind(this)}
             todos={todos} />
-          <Button _submitTodo={() => this._submitTodo()} />
+          <Button submitTodo={() => this.submitTodo()} />
         </ScrollView>
-        <TabBar type={type} _setType={this._setType.bind(this)} />
+        <TabBar type={type} setType={this.setType.bind(this)} />
       </View>
     )
   }
