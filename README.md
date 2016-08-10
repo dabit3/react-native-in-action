@@ -1,16 +1,21 @@
-# React Native in Action
+# React Native in Action Chapter 6
 
-### This is a work in progress
+[Listing 1.1]()
 
-This repository contains code and snippets to go along with React Native in Action, written for Manning Publications.
+Listing 1.2
 
-Code samples will be arranged by chapter. Any future breaking changes will be updated as soon as I am aware of them.
+Listing 1.3
 
-#### Chapter 1
+Listing 1.4
 
-[Chapter 1](https://github.com/dabit3/react-native-in-action/tree/chapter1)
+Listing 1.5
 
+Listing 1.6
 
-#### Chapter 3
+Listing 1.7
 
-[TodoApp](https://github.com/dabit3/react-native-in-action/tree/chapter3)
+Listing 1.8
+
+Listing 1.9
+
+Listing 1.10
