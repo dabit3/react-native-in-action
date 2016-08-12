@@ -1,7 +1,7 @@
 # React Native in Action Chapter 6
 
-[ActivityIndicator]()
+[ActivityIndicator](https://github.com/dabit3/react-native-in-action/tree/chapter6/ActivityIndicator)
 
-[Image]()
+[Image](https://github.com/dabit3/react-native-in-action/tree/chapter6/Image)
 
-[Modal]()
+[Modal](https://github.com/dabit3/react-native-in-action/tree/chapter6/Modal)
