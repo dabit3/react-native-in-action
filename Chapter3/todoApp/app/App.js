@@ -1,13 +1,12 @@
 import React, { Component } from 'react'
 import { View, ScrollView, StyleSheet } from 'react-native'
-
-let todoIndex = 0
-
 import Heading from './Heading'
 import Input from './Input'
 import Button from './Button'
 import TodoList from './TodoList'
 import TabBar from './TabBar'
+
+let todoIndex = 0
 
 class App extends Component {
 
@@ -18,6 +17,10 @@ class App extends Component {
       todos: [],
       type: 'All'
     }
+    this.toggleComplete = this.toggleComplete.bind(this)
+    this.deleteTodo = this.deleteTodo.bind(this)
+    this.setType = this.setType.bind(this)
+    this.submitTodo = this.submitTodo.bind(this)
   }
 
   inputChange (inputValue) {
@@ -29,7 +32,9 @@ class App extends Component {
     let todo = { title: this.state.inputValue, todoIndex: todoIndex, complete: false }
     todoIndex++
     this.state.todos.push(todo)
-    this.setState({ todos: this.state.todos, inputValue: '' })
+    this.setState({ todos: this.state.todos, inputValue: '' }, () => {
+      console.log('State: ', this.state)
+    })
   }
 
   deleteTodo (todoIndex) {
@@ -57,18 +62,26 @@ class App extends Component {
   render () {
     const { todos, inputValue, type } = this.state
     return (
-      <View style={styles.container}>
-        <ScrollView style={styles.content}>
+      <View
+        style={styles.container}>
+        <ScrollView
+          keyboardShouldPersistTaps
+          style={styles.content}>
           <Heading />
-          <Input inputValue={inputValue} inputChange={(text) => this.inputChange(text)} />
+          <Input
+            inputValue={inputValue}
+            inputChange={(text) => this.inputChange(text)} />
           <TodoList
             type={type}
-            toggleComplete={this.toggleComplete.bind(this)}
-            deleteTodo={this.deleteTodo.bind(this)}
+            toggleComplete={this.toggleComplete}
+            deleteTodo={this.deleteTodo}
             todos={todos} />
-          <Button submitTodo={() => this.submitTodo()} />
+          <Button
+            submitTodo={this.submitTodo} />
         </ScrollView>
-        <TabBar type={type} setType={this.setType.bind(this)} />
+        <TabBar
+          type={type}
+          setType={this.setType} />
       </View>
     )
   }

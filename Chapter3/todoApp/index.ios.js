@@ -1,14 +1,7 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { AppRegistry } from 'react-native'
-
 import App from './app/App'
 
-class TodoApp extends Component {
-  render () {
-    return (
-      <App />
-    )
-  }
-}
+const TodoApp = () => <App />
 
 AppRegistry.registerComponent('TodoApp', () => TodoApp)
