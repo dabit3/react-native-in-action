@@ -6,7 +6,7 @@ Code samples will be arranged by chapter. Any future breaking changes will be up
 
 #### Chapter 3
 
-[TodoApp](https://github.com/dabit3/react-native-in-action/tree/master/Chapter3/todoApp)
+[TodoApp](https://github.com/dabit3/react-native-in-action/tree/chapter3/Chapter3/todoApp)
 
 To run the Todo app from chapter 3, please follow these steps:
 
