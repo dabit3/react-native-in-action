@@ -20,7 +20,10 @@ class ModalComponent extends React.Component {
         <TouchableHighlight style={styles.button} onPress={this.toggleModal.bind(this)}>
           <Text>Show Modal!</Text>
         </TouchableHighlight>
-        <Modal visible={visible} animationType='slide'>
+        <Modal
+          onRequestClose={() => () => alert('Modal Closed! ')}
+          onShow={() => () => alert('Modal Shown! ')}
+          visible={visible} animationType='slide'>
           <View style={[styles.container, {backgroundColor: '#ededed'}]}>
             <Text style={{textAlign: 'center'}}>Hello from Modal!!</Text>
             <TouchableHighlight style={styles.button} onPress={this.toggleModal.bind(this)}>
