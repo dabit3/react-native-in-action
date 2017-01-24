@@ -1,23 +1,19 @@
 # React Native in Action
 
-### This is a work in progress
+#### Chapter 9
 
-This repository contains code and snippets to go along with React Native in Action, written for Manning Publications.
+[ActionSheetIOS](https://github.com/dabit3/react-native-in-action/blob/chapter9/ActionSheetIOS/ActionSheetIOS.js)
 
-Code samples will be arranged by chapter. Any future breaking changes will be updated as soon as I am aware of them.
+[DatePickerIOS](https://github.com/dabit3/react-native-in-action/blob/chapter9/DatePickerIOS/DatePickerIOS.js)
 
-#### Chapter 1
+[FileExtension](https://github.com/dabit3/react-native-in-action/tree/chapter9/FileExtension)
 
-[Chapter 1](https://github.com/dabit3/react-native-in-action/tree/chapter1)
+[PickerIOS](https://github.com/dabit3/react-native-in-action/blob/chapter9/PickerIOS/PickerIOS.js)
 
+[Platform](https://github.com/dabit3/react-native-in-action/tree/chapter9/Platform)
 
-#### Chapter 3
+[ProgressViewIOS](https://github.com/dabit3/react-native-in-action/blob/chapter9/ProgressViewIOS/ProgressViewIOS.js)
 
-[TodoApp](https://github.com/dabit3/react-native-in-action/tree/chapter3)
+[SegmentedControlIOS](https://github.com/dabit3/react-native-in-action/blob/chapter9/SegmentedControlIOS/SegmentedControlIOS.js)
 
-#### Chapter 6
-
-[Chapter 6](https://github.com/dabit3/react-native-in-action/tree/chapter6)
-
-#### Chapter 8
-[Chapter 8](https://github.com/dabit3/react-native-in-action/tree/chapter8)
+[TabBarIOS](https://github.com/dabit3/react-native-in-action/blob/chapter9/TabBarIOS/TabBarIOS.js)
