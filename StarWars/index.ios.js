@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import {
   AppRegistry,
   StyleSheet,
@@ -7,47 +7,54 @@ import {
   Image,
   FlatList,
   TouchableHighlight
-} from 'react-native';
-import { StackNavigator } from 'react-navigation';
-import Container from './Container'
-import People from './People'
+} from "react-native";
+import { StackNavigator } from "react-navigation";
+import Container from "./Container";
+import People from "./People";
 
 const links = [
-  { title: 'People', url: 'people' },
-  { title: 'Films', url: 'films' },
-  { title: 'StarShips', url: 'starships' },
-  { title: 'Vehicles', url: 'vehicles' },
-  { title: 'Species', url: 'species' },
-  { title: 'Planets', url: 'planets' }
-]
+  { title: "People" },
+  { title: "Films" },
+  { title: "StarShips" },
+  { title: "Vehicles" },
+  { title: "Species" },
+  { title: "Planets" }
+];
 
-export default class StarWars extends Component {
+class blankRNApp extends Component {
   static navigationOptions = {
     header: {
-      title: <Image style={{ width: 110, height: 64 }} source={{ uri: 'https://raw.githubusercontent.com/dabit3/react-native-in-action/chapter6/sw.jpg' }} />,
-      style: { backgroundColor: 'black', height: 110 }
+      title: (
+        <Image
+          style={{ width: 110, height: 64 }}
+          source={{
+            uri: "https://raw.githubusercontent.com/dabit3/react-native-in-action/chapter6/sw.jpg"
+          }}
+        />
+      ),
+      style: { backgroundColor: "black", height: 110 }
     }
-  }
-  navigate = (link) => {
-    console.log('link:', link)
-    const { navigate } = this.props.navigation
-    navigate(link)
-  }
-  renderItem = (item) => {
+  };
+  navigate = link => {
+    const { navigate } = this.props.navigation;
+    navigate(link);
+  };
+  renderItem = ({ item, index }) => {
     return (
       <TouchableHighlight
-        onPress={() => this.navigate(item.item.title)}
-        style={[ styles.item, { borderTopWidth: item.index === 0 ? 1 : null} ]}>
-        <Text style={styles.text}>{item.item.title}</Text>
+        onPress={() => this.navigate(item.title)}
+        style={[styles.item, { borderTopWidth: index === 0 ? 1 : null }]}
+      >
+        <Text style={styles.text}>{item.title}</Text>
       </TouchableHighlight>
-    )
-  }
+    );
+  };
   render() {
     return (
       <Container>
         <FlatList
           data={links}
-          keyExtractor={(item) => item.title}
+          keyExtractor={item => item.title}
           renderItem={this.renderItem}
         />
       </Container>
@@ -57,25 +64,24 @@ export default class StarWars extends Component {
 
 const Navigation = StackNavigator({
   Home: {
-    screen: StarWars,
+    screen: blankRNApp
   },
   People: {
     screen: People
   }
 });
 
-
 const styles = StyleSheet.create({
   item: {
     padding: 20,
-    justifyContent: 'center',
-    borderColor: 'rgba(255,232,31, .2)',
+    justifyContent: "center",
+    borderColor: "rgba(255,232,31, .2)",
     borderBottomWidth: 1
   },
   text: {
-    color: '#ffe81f',
+    color: "#ffe81f",
     fontSize: 18
   }
 });
 
-AppRegistry.registerComponent('StarWars', () => Navigation);
+AppRegistry.registerComponent("blankRNApp", () => Navigation);
