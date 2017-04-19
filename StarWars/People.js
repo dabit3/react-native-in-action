@@ -58,22 +58,24 @@ export default class People extends Component {
     this.setState({ pickerVisible: !this.state.pickerVisible })
   }
 
-  renderItem = (item) => {
+  filter = (gender) => {
+    this.setState({ gender })
+  }
+
+  renderItem = ({ item }) => {
     return (
       <View style={styles.itemContainer}>
-        <Text style={styles.name}>{item.item.name}</Text>
-        <Text style={styles.info}>Height: {item.item.height}</Text>
-        <Text style={styles.info}>Birth Year: {item.item.birth_year}</Text>
-        <Text style={styles.info}>Gender: {item.item.gender}</Text>
-        <TouchableHighlight style={styles.button} onPress={() => this.openHomeWorld(item.item.homeworld)}>
+        <Text style={styles.name}>{item.name}</Text>
+        <Text style={styles.info}>Height: {item.height}</Text>
+        <Text style={styles.info}>Birth Year: {item.birth_year}</Text>
+        <Text style={styles.info}>Gender: {item.gender}</Text>
+        <TouchableHighlight style={styles.button} onPress={() => this.openHomeWorld(item.homeworld)}>
           <Text style={styles.info}>View Homeworld</Text>
         </TouchableHighlight>
       </View>
     )
   }
-  filter = (gender) => {
-    this.setState({ gender })
-  }
+
   render() {
     let { data } = this.state
     if (this.state.gender !== 'all') {
@@ -89,7 +91,7 @@ export default class People extends Component {
           this.state.loading ? <ActivityIndicator color='#ffe81f' /> : (
             <FlatList
               data={data}
-              keyExtractor={(item) => Math.random()}
+              keyExtractor={(item) => item.name}
               renderItem={this.renderItem}
             />
           )
