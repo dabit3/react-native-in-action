@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import {
   StyleSheet,
   Text,
@@ -10,7 +10,6 @@ import {
   Modal,
   Picker
 } from 'react-native'
-import _ from 'lodash'
 
 import Container from './Container'
 import HomeWorld from './Homeworld'
@@ -45,20 +44,14 @@ export default class People extends Component {
   }
 
   openHomeWorld = (url) => {
-    console.log('url:', url)
     this.setState({
-      url
-    }, () => {
-      this.setState({ modalVisible: true })
+      url,
+      modalVisible: true
     })
   }
 
   closeModal = () => {
     this.setState({ modalVisible: false })
-  }
-
-  showPicker = () => {
-    Picker.open
   }
 
   togglePicker = () => {
@@ -90,9 +83,9 @@ export default class People extends Component {
     return (
       <Container>
         <TouchableHighlight style={styles.pickerToggleContainer} onPress={this.togglePicker}>
-          <Text style={styles.pickerToggle}>{this.state.pickerVisible ? 'Close' : 'Filter'}</Text>
+          <Text style={styles.pickerToggle}>{this.state.pickerVisible ? 'Close Filter' : 'Open Filter'}</Text>
         </TouchableHighlight>
-         {
+        {
           this.state.loading ? <ActivityIndicator color='#ffe81f' /> : (
             <FlatList
               data={data}
@@ -112,10 +105,10 @@ export default class People extends Component {
           this.state.pickerVisible && (
             <View style={styles.pickerContainer}>
               <Picker
-              style={{ backgroundColor: '#ffe81f' }}
-              selectedValue={this.state.gender}
-              onValueChange={(item) => this.filter(item)}>
-              
+                style={{ backgroundColor: '#ffe81f' }}
+                selectedValue={this.state.gender}
+                onValueChange={(item) => this.filter(item)}>
+
                 <Picker.Item itemStyle={{ color: 'yellow' }} label="All" value="all" />
                 <Picker.Item label="Males" value="male" />
                 <Picker.Item label="Females" value="female" />
