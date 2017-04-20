@@ -24,7 +24,7 @@ class HomeWorld extends React.Component {
   }
 
   render() {
-    const { data, closeModal } = this.state
+    const { data } = this.state
     return (
       <View style={styles.container}>
         {
