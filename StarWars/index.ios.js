@@ -23,10 +23,13 @@ const links = [
 
 class blankRNApp extends Component {
   static navigationOptions = {
-    header: {
-      title: <Image style={{ width: 110, height: 64 }} source={{ uri: 'https://raw.githubusercontent.com/dabit3/react-native-in-action/chapter6/sw.jpg' }} />,
-      style: { backgroundColor: 'black', height: 110 }
-    }
+    headerTitle: <Image
+          style={{ width: 110, height: 64 }}
+          source={{
+            uri: "https://raw.githubusercontent.com/dabit3/react-native-in-action/chapter6/sw.jpg"
+          }}
+        />,
+    headerStyle: { backgroundColor: "black", height: 110 }
   }
   navigate = (link) => {
     const { navigate } = this.props.navigation
@@ -77,4 +80,4 @@ const styles = StyleSheet.create({
   }
 });
 
-AppRegistry.registerComponent('blankRNApp', () => Navigation);
+AppRegistry.registerComponent('StarWars', () => Navigation);

@@ -16,18 +16,16 @@ import HomeWorld from './Homeworld'
 
 export default class People extends Component {
   static navigationOptions = {
-    header: {
-      title: 'People',
-      style: {
-        borderBottomWidth: 1,
-        borderBottomColor: '#ffe81f',
-        backgroundColor: 'black'
-      },
-      titleStyle: {
-        color: '#ffe81f',
-      },
-      pressColorAndroid: 'white'
-    }
+    headerTitle: 'People',
+    headerStyle: {
+      borderBottomWidth: 1,
+      borderBottomColor: '#ffe81f',
+      backgroundColor: 'black'
+    },
+    headerTitleStyle: {
+      color: '#ffe81f',
+    },
+    pressColorAndroid: 'white'
   }
   state = {
     data: [],
