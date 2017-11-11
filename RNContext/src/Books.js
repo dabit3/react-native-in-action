@@ -2,27 +2,77 @@ import React from 'react'
 import {
   Text,
   View,
-  StyleSheet
+  ScrollView,
+  StyleSheet,
+  TextInput,
+  TouchableOpacity
 } from 'react-native'
+import { addBook } from './actions'
 
 import { connect } from 'react-redux'
 
+const initialState = {
+  name: '',
+  author: ''
+}
+
 class Books extends React.Component<{}> {
+
+  state = initialState
+
+  updateInput = (key, value) => {
+    this.setState({
+      ...this.state,
+      [key]: value
+    })
+  }
+
+  addBook = () => {
+    this.props.dispatchAddBook(this.state)
+    this.setState(initialState)
+  }
+
   render() {
     const { books } = this.props
-    console.log('books:', books)
+
     return (
-      <View>
+      <View style={styles.container}>
         <Text style={styles.title}>Books</Text>
-        <View style={styles.booksContainer}>
+        <ScrollView style={styles.booksContainer}>
           {
             books.map((book, index) => (
-              <View style={styles.book}>
+              <View style={styles.book} key={index}>
                 <Text style={styles.name}>{book.name}</Text>
                 <Text style={styles.author}>{book.author}</Text>
               </View>
             ))
           }
+        </ScrollView>
+        <View
+          style={styles.inputContainer}
+        >
+          <View style={styles.inputWrapper}>
+            <TextInput
+              value={this.state.name}
+              onChangeText={value => this.updateInput('name', value)}
+              style={styles.input}
+              placeholder='Book name'
+            />
+            <TextInput
+              value={this.state.author}
+              onChangeText={value => this.updateInput('author', value)}
+              style={styles.input}
+              placeholder='Author Name'
+            />
+          </View>
+          <TouchableOpacity
+            onPress={this.addBook}
+          >
+            <View style={styles.addButtonContainer}>
+              <Text
+              style={styles.addButton}>+</Text>
+            </View>
+          </TouchableOpacity>
         </View>
       </View>
     )
@@ -30,9 +80,47 @@ class Books extends React.Component<{}> {
 }
 
 const styles = StyleSheet.create({
+  inputContainer: {
+    padding: 10,
+    backgroundColor: '#ffffff',
+    borderTopColor: '#ededed',
+    borderTopWidth: 1,
+    flexDirection: 'row',
+    height: 100
+  },
+  inputWrapper: {
+    flex: 1
+  },
+  input: {
+    height: 44,
+    padding: 7,
+    backgroundColor: '#ededed',
+    borderColor: '#ddd',
+    borderWidth: 1,
+    borderRadius: 10,
+    flex: 1,
+    marginBottom: 5
+  },
+  addButton: {
+    fontSize: 28,
+    lineHeight: 28
+  },
+  addButtonContainer: {
+    width: 80,
+    height: 80,
+    backgroundColor: '#ededed',
+    marginLeft: 10,
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: 20
+  },
+  container: {
+    flex: 1
+  },
   booksContainer: {
     borderTopWidth: 1,
     borderTopColor: '#ddd',
+    flex: 1
   },
   title: {
     paddingTop: 30,
@@ -56,5 +144,9 @@ const mapStateToProps = (state) => ({
   books: state.bookReducer.books
 })
 
-export default connect(mapStateToProps)(Books)
+const mapDispatchToProps = {
+  dispatchAddBook: (book) => addBook(book)
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Books)
 
