@@ -51,7 +51,7 @@ class HomeWorld extends React.Component {
 
 const TextContainer = ({ label, info }) => <Text style={styles.text}>{label}: {info}</Text>
 
-styles = StyleSheet.create({
+const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#000000',
