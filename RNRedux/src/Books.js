@@ -42,7 +42,10 @@ class Books extends React.Component<{}> {
     return (
       <View style={styles.container}>
         <Text style={styles.title}>Books</Text>
-        <ScrollView style={styles.booksContainer}>
+        <ScrollView
+          keyboardShouldPersistTaps='always'
+          style={styles.booksContainer}
+        >
           {
             books.map((book, index) => (
               <View style={styles.book} key={index}>
