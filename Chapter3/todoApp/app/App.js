@@ -65,7 +65,7 @@ class App extends Component {
       <View
         style={styles.container}>
         <ScrollView
-          keyboardShouldPersistTaps
+          keyboardShouldPersistTaps='always'
           style={styles.content}>
           <Heading />
           <Input
