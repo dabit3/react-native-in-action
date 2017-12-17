@@ -2,4 +2,4 @@
 
 #### Chapter 12
 
-How to use context
+How to use React context
