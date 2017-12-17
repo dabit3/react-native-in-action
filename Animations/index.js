@@ -1,4 +1,4 @@
 import { AppRegistry } from 'react-native';
-import AnimatedLoop from './AnimatedLoop';
+import App from './AnimatedSequence';
 
-AppRegistry.registerComponent('Animations', () => AnimatedLoop);
+AppRegistry.registerComponent('Animations', () => App);
