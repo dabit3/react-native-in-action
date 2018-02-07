@@ -1,25 +1,29 @@
 # React Native in Action Chapter 6
 
-[ActivityIndicator](https://github.com/dabit3/react-native-in-action/blob/chapter6/ActivityIndicator/ActivityIndicator.js)
+Star Wars App
 
-[Image](https://github.com/dabit3/react-native-in-action/tree/chapter6/Image)
+### To get started
 
-[Modal](https://github.com/dabit3/react-native-in-action/blob/chapter6/Modal/Modal.js)
+1. Download the repo    
 
-[ListView](https://github.com/dabit3/react-native-in-action/blob/chapter6/ListView/ListView.js)
+```
+git clone https://github.com/dabit3/react-native-in-action.git
+```
 
-[Picker](https://github.com/dabit3/react-native-in-action/tree/chapter6/Picker)
+2. Check out the chapter 6 branch    
 
-[RefreshControl](https://github.com/dabit3/react-native-in-action/blob/chapter6/RefreshControl/RefreshControl.js)
+```
+git checkout chapter6
+```
 
-[ScrollView](https://github.com/dabit3/react-native-in-action/blob/chapter6/ScrollView/ScrollView.js)
+3. Install dependencies    
 
-[Slider](https://github.com/dabit3/react-native-in-action/blob/chapter6/Slider/Slider.js)
+```
+npm i
+```
 
-[Switch](https://github.com/dabit3/react-native-in-action/blob/chapter6/Switch/Switch.js)
+4. Run project in either iOS or Android simulator    
 
-[TextInput](https://github.com/dabit3/react-native-in-action/blob/chapter6/TextInput/TextInput.js)
-
-[TouchableHighlight](https://github.com/dabit3/react-native-in-action/blob/chapter6/TouchableHighlight/TouchableHighlight.js)
-
-[TouchableWithoutFeedback](https://github.com/dabit3/react-native-in-action/blob/chapter6/TouchableWithoutFeedback/TouchableWithoutFeedback.js)
+```
+react-native run-ios
+```
