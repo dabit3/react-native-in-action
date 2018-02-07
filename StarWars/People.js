@@ -22,10 +22,8 @@ export default class People extends Component {
       borderBottomColor: '#ffe81f',
       backgroundColor: 'black'
     },
-    headerTitleStyle: {
-      color: '#ffe81f',
-    },
-    pressColorAndroid: 'white'
+    pressColorAndroid: 'white',
+    headerTintColor: '#ffe81f'
   }
   state = {
     data: [],
