@@ -23,12 +23,11 @@ const links = [
 
 class StarWars extends Component {
   static navigationOptions = {
-    headerTitle: <Image
-          style={{ width: 110, height: 64 }}
-          source={{
-            uri: "https://raw.githubusercontent.com/dabit3/react-native-in-action/chapter6/sw.jpg"
-          }}
-        />,
+    headerTitle: <Text
+      style={{
+        fontSize: 34, color: 'rgb(255,232,31)'
+      }}
+    >Star Wars</Text>,
     headerStyle: { backgroundColor: "black", height: 110 }
   }
   navigate = (link) => {
