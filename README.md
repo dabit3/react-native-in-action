@@ -1,5 +1,5 @@
 # React Native in Action
 
-#### Chapter 12
+#### Chapter 8
 
 How to use React context
