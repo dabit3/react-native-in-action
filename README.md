@@ -1,4 +1,4 @@
-# React Native in Action Chapter 6
+# React Native in Action Chapter 12
 
 Star Wars App
 
