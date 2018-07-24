@@ -10,16 +10,18 @@ Star Wars App
 git clone https://github.com/dabit3/react-native-in-action.git
 ```
 
-2. Check out the chapter 6 branch    
+2. Check out the chapter 12 branch    
 
 ```
-git checkout chapter6
+git checkout chapter12
 ```
 
 3. Install dependencies    
 
 ```
 npm i
+# or
+yarn
 ```
 
 4. Run project in either iOS or Android simulator    
