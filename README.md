@@ -1,6 +1,6 @@
 # React Native in Action
 
-## Chapter 7 - Navigation
+## Chapter 6 - Navigation
 
 ### This is a work in progress
 
