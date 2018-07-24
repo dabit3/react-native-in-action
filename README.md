@@ -1,5 +1,7 @@
 # React Native in Action
 
+## Chapter 7 - Navigation
+
 ### This is a work in progress
 
 This repository contains code and snippets to go along with React Native in Action, written for Manning Publications.
