@@ -20,7 +20,7 @@ Code samples will be arranged by chapter. Any future breaking changes will be up
 
 #### Chapter 7
 
-[Chapter 7](https://github.com/dabit3/react-native-in-action/tree/chapter6)
+[Chapter 7](https://github.com/dabit3/react-native-in-action/tree/chapter7)
 
 #### Chapter 8
 [Chapter 8](https://github.com/dabit3/react-native-in-action/tree/chapter8)
@@ -28,8 +28,8 @@ Code samples will be arranged by chapter. Any future breaking changes will be up
 #### Chapter 9
 [Chapter 9](https://github.com/dabit3/react-native-in-action/tree/chapter9)
 
-#### Chapter 11
-[Chapter 11](https://github.com/dabit3/react-native-in-action/tree/chapter11)
+#### Chapter 10
+[Chapter 11](https://github.com/dabit3/react-native-in-action/tree/chapter10)
 
 #### Chapter 12
 [Chapter 12](https://github.com/dabit3/react-native-in-action/tree/chapter12)
