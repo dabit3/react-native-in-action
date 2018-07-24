@@ -1,14 +1,11 @@
 import React, { Component } from 'react';
 import {
-  AppRegistry,
   StyleSheet,
   Text,
-  View,
-  Image,
   FlatList,
   TouchableHighlight
 } from 'react-native';
-import { StackNavigator } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation';
 import Container from './Container'
 import People from './People'
 
@@ -56,7 +53,7 @@ class StarWars extends Component {
   }
 }
 
-const App = StackNavigator({
+const App = createStackNavigator({
   Home: {
     screen: StarWars,
   },
