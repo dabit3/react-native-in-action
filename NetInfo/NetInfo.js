@@ -1,37 +1,35 @@
 import React, { Component }  from 'react'
-import { TouchableHighlight, NetInfo, TextInput, View, Text, StyleSheet } from 'react-native' // A
-
-let styles = {}
+import { NetInfo, View, Text, StyleSheet } from 'react-native' // A
 
 class NetInfoExample extends Component {
   constructor () {
     super()
     this.state = {
-      connection: ''
+      connectionInfo: {}
     }
     this.handleConnectivityChange = this.handleConnectivityChange.bind(this)
   }
   componentDidMount () {
-    NetInfo.fetch().done((connection) => {
-      console.log('connection: ' + connection)
-      this.setState({connection})
+    NetInfo.getConnectionInfo().then((connectionInfo) => {
+      console.log('type: ' + connectionInfo.type + ', effectiveType: ' + connectionInfo.effectiveType)
+      this.setState({connectionInfo})
     })
-    NetInfo.addEventListener('change', this.handleConnectivityChange)
+    NetInfo.addEventListener('connectionChange', this.handleConnectivityChange)
   }
-  handleConnectivityChange (connection) {
-    console.log('new connection:', connection)
-    this.setState({connection})
+  handleConnectivityChange (connectionInfo) {
+    console.log('new connection:', connectionInfo)
+    this.setState({connectionInfo})
   }
   render () {
     return (
       <View style={styles.container}>
-        <Text>{this.state.connection}</Text>
+        <Text>{this.state.connectionInfo.type}</Text>
       </View>
     )
   }
 }
 
-styles = StyleSheet.create({
+const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
