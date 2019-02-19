@@ -14,6 +14,14 @@ Code samples will be arranged by chapter. Any future breaking changes will be up
 
 [TodoApp](https://github.com/dabit3/react-native-in-action/tree/chapter3)
 
+#### Chapter 4
+
+[TodoApp](https://github.com/dabit3/react-native-in-action/tree/chapter4)
+
+#### Chapter 5
+
+[TodoApp](https://github.com/dabit3/react-native-in-action/tree/chapter5)
+
 #### Chapter 6
 
 [Chapter 6](https://github.com/dabit3/react-native-in-action/tree/chapter6)
