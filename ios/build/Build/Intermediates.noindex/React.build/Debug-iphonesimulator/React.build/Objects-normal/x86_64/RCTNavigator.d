@@ -1,0 +1,30 @@
+dependencies: \
+  /Users/naderdabit/Personal/book/CitiesApp/node_modules/react-native/React/Views/RCTNavigator.m \
+  /Users/naderdabit/Personal/book/CitiesApp/node_modules/react-native/React/Views/RCTNavigator.h \
+  /Users/naderdabit/Personal/book/CitiesApp/node_modules/react-native/React/Base/RCTFrameUpdate.h \
+  /Users/naderdabit/Personal/book/CitiesApp/node_modules/react-native/React/Base/RCTAssert.h \
+  /Users/naderdabit/Personal/book/CitiesApp/node_modules/react-native/React/Base/RCTDefines.h \
+  /Users/naderdabit/Personal/book/CitiesApp/node_modules/react-native/React/Base/RCTBridge.h \
+  /Users/naderdabit/Personal/book/CitiesApp/node_modules/react-native/React/Base/RCTBridgeDelegate.h \
+  /Users/naderdabit/Personal/book/CitiesApp/node_modules/react-native/React/Base/RCTJavaScriptLoader.h \
+  /Users/naderdabit/Personal/book/CitiesApp/node_modules/react-native/React/Base/RCTBridgeModule.h \
+  /Users/naderdabit/Personal/book/CitiesApp/node_modules/react-native/React/Base/RCTInvalidating.h \
+  /Users/naderdabit/Personal/book/CitiesApp/node_modules/react-native/React/Base/RCTConvert.h \
+  /Users/naderdabit/Personal/book/CitiesApp/node_modules/react-native/React/Views/RCTAnimationType.h \
+  /Users/naderdabit/Personal/book/CitiesApp/node_modules/react-native/React/Views/RCTBorderStyle.h \
+  /Users/naderdabit/Personal/book/CitiesApp/node_modules/react-native/React/Base/RCTLog.h \
+  /Users/naderdabit/Personal/book/CitiesApp/node_modules/react-native/React/Base/RCTUtils.h \
+  /Users/naderdabit/Personal/book/CitiesApp/node_modules/react-native/React/Views/RCTPointerEvents.h \
+  /Users/naderdabit/Personal/book/CitiesApp/node_modules/react-native/React/Views/RCTTextDecorationLineType.h \
+  /Users/naderdabit/Personal/book/CitiesApp/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
+  /Users/naderdabit/Personal/book/CitiesApp/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
+  /Users/naderdabit/Personal/book/CitiesApp/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
+  /Users/naderdabit/Personal/book/CitiesApp/node_modules/react-native/React/Base/RCTEventDispatcher.h \
+  /Users/naderdabit/Personal/book/CitiesApp/node_modules/react-native/React/Views/RCTNavItem.h \
+  /Users/naderdabit/Personal/book/CitiesApp/node_modules/react-native/React/Views/RCTComponent.h \
+  /Users/naderdabit/Personal/book/CitiesApp/node_modules/react-native/React/Views/ScrollView/RCTScrollView.h \
+  /Users/naderdabit/Personal/book/CitiesApp/node_modules/react-native/React/Views/RCTAutoInsetsProtocol.h \
+  /Users/naderdabit/Personal/book/CitiesApp/node_modules/react-native/React/Views/ScrollView/RCTScrollableProtocol.h \
+  /Users/naderdabit/Personal/book/CitiesApp/node_modules/react-native/React/Views/RCTView.h \
+  /Users/naderdabit/Personal/book/CitiesApp/node_modules/react-native/React/Views/RCTWrapperViewController.h \
+  /Users/naderdabit/Personal/book/CitiesApp/node_modules/react-native/React/Views/UIView+React.h

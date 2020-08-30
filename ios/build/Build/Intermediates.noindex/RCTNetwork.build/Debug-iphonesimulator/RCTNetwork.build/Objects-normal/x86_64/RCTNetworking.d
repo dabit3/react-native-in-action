@@ -1,0 +1,27 @@
+dependencies: \
+  /Users/naderdabit/Personal/book/CitiesApp/node_modules/react-native/Libraries/Network/RCTNetworking.mm \
+  /Users/naderdabit/Personal/book/CitiesApp/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAssert.h \
+  /Users/naderdabit/Personal/book/CitiesApp/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTDefines.h \
+  /Users/naderdabit/Personal/book/CitiesApp/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTConvert.h \
+  /Users/naderdabit/Personal/book/CitiesApp/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAnimationType.h \
+  /Users/naderdabit/Personal/book/CitiesApp/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBorderStyle.h \
+  /Users/naderdabit/Personal/book/CitiesApp/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTLog.h \
+  /Users/naderdabit/Personal/book/CitiesApp/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTUtils.h \
+  /Users/naderdabit/Personal/book/CitiesApp/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTPointerEvents.h \
+  /Users/naderdabit/Personal/book/CitiesApp/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTTextDecorationLineType.h \
+  /Users/naderdabit/Personal/book/CitiesApp/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
+  /Users/naderdabit/Personal/book/CitiesApp/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
+  /Users/naderdabit/Personal/book/CitiesApp/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
+  /Users/naderdabit/Personal/book/CitiesApp/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTEventDispatcher.h \
+  /Users/naderdabit/Personal/book/CitiesApp/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridge.h \
+  /Users/naderdabit/Personal/book/CitiesApp/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeDelegate.h \
+  /Users/naderdabit/Personal/book/CitiesApp/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTJavaScriptLoader.h \
+  /Users/naderdabit/Personal/book/CitiesApp/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeModule.h \
+  /Users/naderdabit/Personal/book/CitiesApp/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTFrameUpdate.h \
+  /Users/naderdabit/Personal/book/CitiesApp/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTInvalidating.h \
+  /Users/naderdabit/Personal/book/CitiesApp/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTNetworkTask.h \
+  /Users/naderdabit/Personal/book/CitiesApp/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTURLRequestDelegate.h \
+  /Users/naderdabit/Personal/book/CitiesApp/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTURLRequestHandler.h \
+  /Users/naderdabit/Personal/book/CitiesApp/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTNetworking.h \
+  /Users/naderdabit/Personal/book/CitiesApp/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTEventEmitter.h \
+  /Users/naderdabit/Personal/book/CitiesApp/node_modules/react-native/Libraries/Network/RCTHTTPRequestHandler.h
